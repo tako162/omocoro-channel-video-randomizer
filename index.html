@@ -4,23 +4,41 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="ランダマイザー">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon.ico" sizes="180x180">
     <title>ランダマイザー</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <p id="vt">読み込み中...</p>
+    <div class="wrapper">
+        <div class="main-content">
+            <p id="vt">読み込み中...</p>
 
-    <div class="video-wrapper">
-        <iframe id="vl" src="" title="YouTube video player"
-            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-wrapper">
+                <iframe id="vl" src="" title="YouTube video player"
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="button-wrapper">
+                <button type="button" id="rb">シャッフル</button>
+            </div>
+        </div>
+
+        <footer>
+            このサイトでは、YouTubeの埋め込み機能を利用して、オモコロチャンネルの動画をランダムに表示しています。<br>
+            動画の著作権は、各動画の投稿者またはその権利者に帰属します。<br>
+            本サイトは非公式であり、<a href="https://omocoro.jp/" target="_blank" rel="noopener noreferrer">オモコロ</a>および<a
+                href="https://bhb.co.jp/" target="_blank"
+                rel="noopener noreferrer">株式会社バーグハンバーグバーグ</a>とは一切関係がありません。<br><br>
+            © 2025 <a href="https://github.com/tako162/" target="_blank" rel="noopener noreferrer">tako162</a>. All
+            Rights Reserved.
+        </footer>
     </div>
-
-    <div class="button-wrapper">
-        <button type="button" id="rb">シャッフル</button>
-    </div>
-
     <script src="script.js"></script>
 </body>
 
